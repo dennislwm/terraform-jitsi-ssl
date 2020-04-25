@@ -53,8 +53,6 @@ In each module, we perform the following in Terraform via a SSH connection:
        |- README.md                   <-- This README markdown file
        +- bin/                        <-- Holds any executable files
           |- mkswap.sh                <-- Creates a swapfile in a Bash terminal for production
-       +- config/                     <-- Holds any configuration files
-          |- ssh.conf                 <-- SSH configuration file
        +- tf/                         <-- Terraform root folder
           |- main.tf                  <-- Main TF file (required)
           |- variables.tf             <-- Default variables declaration file for root
@@ -106,7 +104,7 @@ URL: https://slugs.do-api.dev/
 
 ### Initialize Terraform Nested Modules
 
-In the Terraform **root** folder, type the following command in your terminal:
+In the Terraform **tf** folder, type the following command in your terminal:
 
      $ terraform init
 
@@ -145,4 +143,4 @@ Note: Add optional parameter "-target=module.mymodule" to destroy a given module
 ### Reach Out!
 Please consider giving this repository a star on GitHub.
 
-Alternatively, leave a comment on the tutorial How to Deploy Your Secure Video Conference Server in 4 GIF Steps.
+Alternatively, leave a comment on the tutorial [How to Deploy Your Secure Video Conference Server in 4 GIF Steps](https://bit.ly/devto005c).
