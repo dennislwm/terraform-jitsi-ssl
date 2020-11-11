@@ -1,0 +1,25 @@
+{
+  "name": "terraform-jitsi-ssl",
+  "version": "1.0.0",
+  "description": "Terraform starter project for a self-hosted Jitsi Video Server.",
+  "main": "index.js",
+  "scripts": {
+    "scpup": "scp -F c:\\Users\\denbrige\\.ssh\\config -i C:\\Users\\denbrige\\.ssh\\id_rsa_do1 -r d:\\docker\\jitsi root@142.93.12.220:/root",
+    "ssh": "ssh -F C:\\Users\\denbrige\\.ssh\\config -i C:\\Users\\denbrige\\.ssh\\id_rsa_do1 root@142.93.12.220",
+    "tfinit": "cd tf && terraform init && cd ..",
+    "tfplan": "cd tf && terraform plan && cd ..",
+    "tfapply": "cd tf && terraform apply && cd ..",
+    "tfdestroy": "cd tf && terraform destroy -target=module.jitsi && cd ..",
+    "tfshow": "cd tf && terraform show && cd .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dennislwm/terraform-jitsi-ssl.git"
+  },
+  "author": "Dennis Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dennislwm/terraform-jitsi-ssl/issues"
+  },
+  "homepage": "https://github.com/dennislwm/terraform-jitsi-ssl#readme"
+}
