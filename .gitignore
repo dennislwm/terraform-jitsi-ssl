@@ -1,0 +1,7 @@
+.env
+*LICENSE
+node_modules/
+tf/.terraform/
+tf/*.tfstate*
+tf/*.tfvars
+tf/*.plan
